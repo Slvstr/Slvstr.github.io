@@ -1,6 +1,6 @@
 # Site settings
 title: Erik Sylvester Hellenbrand
-email: ehellenbrand@gmail.com
+email: 
 description: > # this means to ignore newlines until "baseurl:"
   Personal site for Erik Hellenbrand
 baseurl: "" # the subpath of your site, e.g. /blog/
