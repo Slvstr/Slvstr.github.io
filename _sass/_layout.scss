@@ -12,42 +12,82 @@
     justify-content: center;
     align-items: center;
 
-    h1 {
-        font-size: 4em;
-    }
 
 
-    svg {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        vertical-align: middle;
+    .icons {
 
-        path {
-            fill: black;
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        div {
+            width: 70px;
+            height: 70px;
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: $grey-color;
+            border-radius: 50%;
+            border: 2px solid white;
+            transition: all 0.5s ease-out;
+
+            a {
+                color: $grey-color-light;
+                position: relative;
+                transition: all 0.5s ease-out;
+            }
         }
-    }
 
-    svg:hover {
-        path {
-            fill: $grey-color;
+        div:hover {
+            width: 85px;
+            height: 85px;
+            background: $grey-color-dark;
+
+            a {
+                color: $grey-color;
+                font-size: 1.2em;
+
+            }
         }
     }
 
 }
 
+.banner {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    z-index: 0;
+}
+
 .central-circle {
-    padding: 5%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    text-shadow: 1px 1px white;
-    background: rgba(200,200,200,0.5);
-    height: 400px;
-    width: 400px;
+    background: rgba(10,70,110,0.4);
+    height: 550px;
+    width: 550px;
     border-radius: 300px;
-    border: 5px solid white;
+    border: 5px solid $grey-color-light;
+    z-index: 1;
+
+    .title {
+        text-shadow: 1px 1px $grey-color;
+        font-size: 2.5em;
+        color: white;
+        height: 100px;
+          
+    }
 }
 
 
