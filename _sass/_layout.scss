@@ -56,39 +56,51 @@
         }
     }
 
-}
-
-.banner {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    background: rgba(255,255,255,.2);
-    z-index: 0;
-}
-
-.central-circle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(10,70,110,0.4);
-    height: 550px;
-    width: 550px;
-    border-radius: 300px;
-    border: 5px solid $grey-color-light;
-    z-index: 1;
-
-    .title {
-        text-shadow: 1px 1px $grey-color;
-        font-size: 2.5em;
-        color: white;
-        height: 100px;
-          
+    .banner {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: rgba(255,255,255,.2);
+        z-index: 0;
     }
+
+    .central-circle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(10,70,110,0.4);
+        height: 550px;
+        width: 550px;
+        border-radius: 300px;
+        border: 5px solid $grey-color-light;
+        z-index: 1;
+
+        .title {
+            text-shadow: 1px 1px $grey-color;
+            font-size: 2.5em;
+            color: white;
+            height: 100px;
+              
+        }
+    }
+
+    @include media-query($on-palm) {
+        .central-circle {
+            height: 200px;
+            width: 200px;
+
+            .title {
+                font-size: 1em;
+            }
+        }
+    }
+
 }
+
 
 
 
@@ -328,3 +340,4 @@
         }
     }
 }
+
