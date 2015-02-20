@@ -90,12 +90,23 @@
 
     @include media-query($on-palm) {
         .central-circle {
-            height: 200px;
-            width: 200px;
+            height: 250px;
+            width: 250px;
 
             .title {
                 font-size: 1em;
             }
+        }
+    }
+
+    @include media-query($on-laptop) {
+        .central-circle {
+            height: 350px;
+            width: 350px;
+        }
+
+        .title {
+            font-size: 1.5em;
         }
     }
 
